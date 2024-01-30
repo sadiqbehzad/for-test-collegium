@@ -1,0 +1,144 @@
+/* * {
+    border: solid red;
+} */
+.navbar {
+    background-color: #4A5358;
+    color: white;
+    /* padding: 1vw; */
+
+}
+.arrow {
+    font-size: 1vw;
+    padding: 0;
+}
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    position:fixed;
+    left: 1vw;
+
+}
+.logo img {
+    width: 10vw;
+    object-fit: cover;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5vw;
+    top: 6vw;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2vw;
+    margin-left: auto;
+    margin-right: 1vw;
+    padding: 0;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.sub-menu{
+    list-style-type: none;
+    position: absolute;
+    background-color: #0A253B;
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5vw;
+    min-width: 11vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.sub-menu li {
+    padding: 1vw;
+
+}
+.nav-link:hover {
+    background: linear-gradient(to bottom, #ffffff, #36EBCA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.sub-menu .nav-link:hover {
+    color: white;
+}
+.sub-menu li:hover{
+    background-color: #1d4261;
+  }
+  
+.close-button {
+    display: none;
+    cursor: pointer;
+    padding-left: auto;
+    font-size: 3.vw;
+    color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 2.5vw;
+        min-width: 2.5vw;
+    }
+    .logo img {
+        width: 20vw;
+        object-fit: cover;
+    }
+    .menu-icon {
+        display: block;
+        
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        position: absolute;
+        top: 8vw;
+        width: 100%;
+        background-color: #000;
+    }
+    .nav-list .nav-link {
+        margin-left: 2vw;
+    }
+    .nav-list.show{
+        display: block;
+        /* padding-top: 5vw; */
+        padding-left: 2vw;
+    }
+
+    .nav-list.show .sub-menu li{
+        margin: 0;
+        padding-left: 3vw;
+    }
+
+    .sub-menu{
+        position: static;
+        
+    }
+
+    .close-button {
+        display: flex;
+        }
+    .nav-list li {
+        position: relative;
+        margin: 10px 0;
+    }
+    .arrow {
+        font-size: 2.5vw;
+        min-width: 2.5vw;
+    }
+}
