@@ -1,0 +1,39 @@
+.mission-vision {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6FCFC;
+    color: black;
+    z-index: -1;
+    /* border: solid yellow; */
+
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 1.7vw;
+    margin-bottom: 0;
+    border-bottom: 2px solid black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.title span {
+    font-size: 4.5vw;
+ 
+}
+.missionVision-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission, .vision {
+    border: solid red;
+    width: 30vw;
+}

@@ -92,6 +92,9 @@ const Navbar = () => {
   //hide the dropdowns once the screen is resized:
   const handleResize = () => {
     setisNavListVisible(false);
+    setIsServicesVisible(false);
+    setIsResourcesVisible(false);
+    setIsAboutUsVisible(false);
   };
   useEffect(() => {
     document.addEventListener("click", handleDocumentClick);

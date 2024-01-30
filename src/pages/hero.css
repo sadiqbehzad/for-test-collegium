@@ -1,0 +1,125 @@
+/* * {
+    border: 1px solid yellow;
+} */
+
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: url("./heroImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    z-index: -1;
+    padding-left: 10vw;
+    /* border: solid yellow; */
+
+}
+.main-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    text-align: left;
+
+}
+.route {
+    font-size: 1vw;
+    /* margin-bottom: 0; */
+}
+.title {
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.subtitle {
+    margin-top: 0;
+    /* margin-bottom: 0; */
+   
+}
+.description {
+    /* line-height: 30px; */
+    font-size: 1.4vw;
+}
+.contact-card {
+    background: linear-gradient(to right, #1882FF, #36EBCA); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    top: 84vh;
+    right: 4vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.contact-card-container {
+    background-color: white;
+    color: black;
+    padding: 1vw 3vw 1vw 3vw;
+    width: 28vw;
+    border: 0;
+    /* border: 1px solid red; */
+    margin-top: 4px;
+}
+.contact-title {
+    font-size: 1vw;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+.contact-number {
+    color: #00215B;
+    font-weight: bolder;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+.contact-email {
+    color: #00215B;
+    font-weight: bolder;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) { 
+    body {
+        margin: 0;
+    }
+    .hero-section {
+        height: 60vh;
+        margin-top: 60px;
+    }
+ 
+    .route {
+        font-size: 1.6vw;
+    }
+    .title {
+        font-size: 5vw;
+    }
+    .subtitle {
+        font-size: 3vw;
+       
+    }
+    .description {
+        font-size: 2vw;
+    }
+
+    .contact-card {
+        top: 63vh;
+    }
+    .contact-card-container {
+        width: 40vw;
+
+    }
+    .contact-title {
+        font-size: 1.7vw;
+    }
+    .contact-number, .contact-email {
+        font-size: 2vw;
+    }
+   
+}
