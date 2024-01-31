@@ -2,6 +2,7 @@ import Language from "./Language";
 import Navbar from "./Navbar";
 import Hero from "./pages/Hero";
 import MissionVision from "./pages/MissionVision";
+import "./app.css";
 // import Projects from "./Projects";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <Language position="relative" />
       <Navbar />
-      {/* <Projects /> */}
+
       <Hero />
       <MissionVision />
     </div>
