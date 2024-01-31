@@ -1,9 +1,11 @@
-/* * {
-    border: solid red;
-} */
+
 .navbar {
     background-color: #4A5358;
     color: white;
+    position: relative;
+    display: flex;
+    justify-content:right;
+    transition: top 0.3s;
 
 
 }
@@ -17,10 +19,11 @@
     justify-content: center;
     align-items: center;
 }
-.logo{
-    position:fixed;
-    left: 1vw;
 
+.logo{
+    display: flex;
+    left: 1vw;
+    position: absolute;
 }
 .logo img {
     width: 10vw;
@@ -29,9 +32,10 @@
 .menu-icon {
     display: none;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     right: 1.5vw;
-    top: 6vw;
+    color: white;
+
 }
 .nav-list {
     display: flex;
@@ -40,7 +44,6 @@
     align-items: center;
     list-style-type: none;
     gap: 2vw;
-    margin-left: auto;
     margin-right: 1vw;
     padding: 0;
 
@@ -58,9 +61,10 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 0.5vw;
+    margin-top: 1.3vw;
     min-width: 11vw;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 
 }
 .sub-menu li {
@@ -83,42 +87,48 @@
 .close-button {
     display: none;
     cursor: pointer;
-    padding-left: auto;
-    font-size: 3.vw;
     color: red;
+  
 }
 
+.navbar.hidden {
+    top: -50px; 
+  }
 
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 2.5vw;
-        min-width: 2.5vw;
-    }
-    .logo img {
-        width: 20vw;
-        object-fit: cover;
+    .navbar {
+        background-color: #1d4261;
+        height: 40px;
     }
     .menu-icon {
-        display: block;
+        display: flex;
+        position: absolute;
+
         
+    }
+    .logo img {
+        width: 80px;
     }
     .nav-list {
         display: none;
-        flex-direction: column;
-        text-align: left;
-        position: absolute;
-        top: 8vw;
+    }
+    .nav-list.show{
+        display: block;
+        top: 100%;
         width: 100%;
         background-color: #000;
+        box-sizing: border-box;
+        padding: 20px 40px 40px 20px;
+        position: absolute;
+        left: 0;
+        margin-top: 0;
+        z-index: 20;
+
     }
     .nav-list .nav-link {
         margin-left: 2vw;
     }
-    .nav-list.show{
-        display: block;
-        /* padding-top: 5vw; */
-        padding-left: 2vw;
-    }
+
 
     .nav-list.show .sub-menu li{
         margin: 0;
@@ -127,18 +137,18 @@
 
     .sub-menu{
         position: static;
+        background-color: transparent;
         
     }
 
     .close-button {
         display: flex;
-        }
+    }
     .nav-list li {
-        position: relative;
         margin: 10px 0;
     }
     .arrow {
-        font-size: 2.5vw;
-        min-width: 2.5vw;
+        font-size: 12px;
+
     }
 }

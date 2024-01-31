@@ -96,9 +96,11 @@ const Navbar = () => {
     setIsResourcesVisible(false);
     setIsAboutUsVisible(false);
   };
+
   useEffect(() => {
     document.addEventListener("click", handleDocumentClick);
     window.addEventListener("resize", handleResize);
+
     return () => {
       document.removeEventListener("click", handleDocumentClick);
       window.removeEventListener("resize", handleResize);
