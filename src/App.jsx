@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Hero from "./pages/WhoWeAre/Hero";
 import InnovSustain from "./pages/WhoWeAre/InnovSustain";
+import MeetOurTeam from "./pages/WhoWeAre/MeetOurTeam";
 import MissionVision from "./pages/WhoWeAre/MissionVision";
 // import Projects from "./Projects";
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <MissionVision />
       <InnovSustain />
+      <MeetOurTeam />
     </div>
   );
 }
