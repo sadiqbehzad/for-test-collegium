@@ -1,6 +1,6 @@
 import "./hero.css";
 
-import Button2 from "../Button2";
+import Button2 from "../../Button2";
 
 const WhoWeAre = () => {
   return (

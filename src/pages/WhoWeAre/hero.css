@@ -44,29 +44,33 @@
     margin-top: 0;
     font-size: 1.5vw;
 }
-
 .contact-card {
     background: linear-gradient(to right, #1882FF, #36EBCA); 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid yellow; */
-    right: 4vw;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    position: absolute;
+    /* box-sizing: border-box; */
+    width: 28vw;
     margin-top: -5vw;
-    box-sizing: border-box;
+    position: absolute;
+    right: 4vw;
+    z-index: 2;
+
 }
 .contact-card-container {
     background-color: white;
     color: black;
     padding: 1vw 3vw 1vw 3vw;
-    width: 28vw;
+    width: 100%;
     border: 0;
     /* border: 1px solid red; */
     margin-top: 4px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
 }
 .contact-title {
     font-size: 0.8vw;
@@ -86,7 +90,6 @@
     margin-top: 0;
     letter-spacing: 1px;
 }
-
 
 
 @media screen and (max-width: 768px) {
@@ -110,18 +113,25 @@
         text-align:center;
         font-size: 12px;
     }
-    .contact-card-container{
-        width: 250px;
+    .contact-card { 
+        width: 100%;
+        position: relative;
+        right: 0;
+        margin-top: 0;
+        box-shadow:none;
     }
-    .contact-title {
-        font-size: 10px;
+    .contact-card-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 2px;
     }
-    .contact-number {
-        font-size: 14px;
+    .contact-title, .contact-number, .contact-email {
+        font-size: 8px;
+        margin: auto;
+        letter-spacing: 0;
+        
     }
-    .contact-email {
-        font-size: 14px;
-    }
-    
-    
+
   }
