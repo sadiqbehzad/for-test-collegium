@@ -2,7 +2,11 @@ import "./navbar.css";
 import logo from "./logo.png";
 import { useState, useEffect, useCallback } from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { background } = props;
+  const navStyle = {
+    backgroundColor: background || "",
+  };
   //Hook for menu arrow:
   const [isServicesArrowChanged, setIsServicesArrowChanged] = useState("⋁");
   const servicesArrowDocumentClick = () => {
@@ -111,7 +115,7 @@ const Navbar = () => {
     setisNavListVisible(false);
   };
   return (
-    <nav class="navbar">
+    <nav class="navbar" style={navStyle}>
       <div className="navbar-container">
         <div className="logo">
           <img src={logo} alt="logo" />

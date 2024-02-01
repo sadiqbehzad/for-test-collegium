@@ -1,18 +1,13 @@
-import Navbar from "./Navbar";
-import Hero from "./pages/WhoWeAre/Hero";
-import InnovSustain from "./pages/WhoWeAre/InnovSustain";
-import MeetOurTeam from "./pages/WhoWeAre/MeetOurTeam";
-import MissionVision from "./pages/WhoWeAre/MissionVision";
+// import WhoWeAre from "./pages/WhoWeAre/WhoWeAre";
 // import Projects from "./Projects";
+
+import BlogsHero from "./pages/Blogs/BlogsHero";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <MissionVision />
-      <InnovSustain />
-      <MeetOurTeam />
+      {/* <WhoWeAre /> */}
+      <BlogsHero />
     </div>
   );
 }
