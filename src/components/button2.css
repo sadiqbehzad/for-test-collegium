@@ -1,0 +1,45 @@
+.myButton-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.myBttn, .myBttn-reflection {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #1882FF, #36EBCA); 
+    border-image-slice: 1; 
+    color: white; 
+    font-size: 1.3vw;
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.myBttn {
+    display: flex;
+}
+.myBttn-reflection {
+    display: none;
+    border-width:0 2px 2px 0;
+    color: transparent; 
+    position: absolute;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.myButton-container:hover .myBttn{
+    font-weight: bold;
+}
+.myButton-container:hover .myBttn-reflection {
+    display: flex;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .myBttn, .myBttn-reflection {
+        font-size: 12px;
+    }
+}
