@@ -4,6 +4,10 @@ import Hero from "./Hero";
 import InnovSustain from "./InnovSustain";
 import MeetOurTeam from "./MeetOurTeam";
 import MissionVision from "./MissionVision";
+import ContactCard from "../../components/contactCard/SadiqContactCard";
+import "./whoweare.css";
+import SFooter from "../../components/footer/SFooter";
+
 const WhoWeAre = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "White";
@@ -15,9 +19,13 @@ const WhoWeAre = () => {
     <div>
       <Navbar />
       <Hero />
+      <div className="contact-card-div">
+        <ContactCard />
+      </div>
       <MissionVision />
       <InnovSustain />
       <MeetOurTeam />
+      <SFooter />
     </div>
   );
 };
